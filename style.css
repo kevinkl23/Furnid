@@ -1,0 +1,655 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 80px;
+    width: 100%;
+}
+
+.logo a{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    position: absolute;
+    padding: 10px;
+    float: left;
+    margin: 0 30px;
+    color: white;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 20px 30px;
+    padding: 10px;
+    color: white;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav :hover{
+    color: darkgray;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+body{
+    background: rgba(0,0,0,0.5) url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    min-height: 100vh;
+}
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+}
+
+.homeupper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    margin: 100px;
+    align-items: center;
+    color: white;
+}
+
+.homelower{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lowertitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lowertitleline{
+    margin-top: 5px;
+    width: 450px;
+    height: 2px;
+    background-color: rgba(254, 222, 179, 0.6);
+}
+
+.linelower{
+    width: 80%;
+    height: 4px;
+    margin-bottom: 50px;
+    background-color: rgba(254, 222, 179, 0.6);
+}
+
+.homelower h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+    color: white;
+}
+
+.line{
+    width: 5px;
+    height: 650px;
+    background-color: rgba(254, 222, 179, 0.6);
+}
+
+.homeupper button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    background: transparent;
+    color: white;
+    width: 350px;
+    height: 100px;
+    border-radius: 30px;
+    border: 2px solid #FBFAF5;
+    cursor: pointer;
+}
+
+.homepage button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.homeupper button a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.topitem img{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.topitem p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.topitems{
+    display: flex;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+
+.topitems::-webkit-scrollbar{
+    width: 0;
+}
+
+.topitems button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    margin: 10px;
+    width: 120px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid #FBFAF5;
+    background: transparent;
+    cursor: pointer;
+}
+
+.topitems button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.shopcategory button a{
+    text-decoration: none;
+    color: white;
+}
+
+.aboutus{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutustop{
+    text-align: center;
+    top: 20%;
+    color: white;
+}
+
+.aboutustop h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.aboutustop p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.border{
+    width: 100%;
+    height: 2px;
+    margin-bottom: 20px;
+    background-color: rgba(254, 222, 179, 0.6);
+}
+
+.aboutusbottom{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 100px; 
+    text-align: center;
+    color: white;
+}
+
+.aboutusbottom h1{
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.aboutusbottom p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.banner img{
+    width: 800px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+
+.banner::-webkit-scrollbar{
+    width: 0;
+}
+
+.shopcategory{
+    margin: 30px;
+    text-align: center;
+}
+
+.shopcategory ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px 30px;
+    padding: 10px;
+    color: white;
+}
+
+.shopcategory ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.shopcategory button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    margin: 20px;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.shopcategory button a{
+    font-size: 20px;
+}
+
+.shopcategory button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.itemtitle{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.itemtitleline{
+    margin-top: 5px;
+    width: 250px;
+    height: 2px;
+    background-color: rgba(254, 222, 179, 0.6);
+}
+
+.itemcontent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.item button{
+    width: 175px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    margin: 20px;
+    width: 250px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid #FBFAF5;
+    background: transparent;
+    cursor: pointer;
+}
+
+.item button a{
+    font-size: 25px;
+}
+
+.item button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.itemcontent img{
+    margin: 30px;
+    margin-bottom: 8px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+.item p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+
+.top{
+    font-size: 20px;
+    color: red ;
+}
+
+.contactbutton button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    margin: 20px;
+    width: 250px;
+    padding: 12px;
+    border-radius: 30px;
+    border: 2px solid #FBFAF5;
+    background: transparent;
+    cursor: pointer;
+}
+
+.contactbutton button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.contactbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contactbutton button a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.contacttitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacttitle h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    color: white;
+}
+
+.contactline{
+    margin-top: 10px;
+    width: 400px;
+    height: 2px;
+    background-color: rgba(254, 222, 179, 0.6);
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form{
+    width: 1000px;
+}
+
+.inputform label{
+    color: white;
+    padding: 15px;
+}
+
+input, textarea{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 1000px;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    cursor: text;
+}
+
+.contactform form button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 1000px;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border: 2px solid #FBFAF5;
+    background: transparent;
+    color: white;
+}
+
+.contactform form button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.mycarttitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mycarttitle h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    color: white;
+}
+
+.youritemline{
+    margin-top: 10px;
+    width: 300px;
+    height: 2px;
+    background-color: rgba(254, 222, 179, 0.6);
+}
+
+.itemlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 90%;
+    height: 650px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.itemlist button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemlist button:hover{
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+footer
+{
+    position: sticky;
+    top: 100%;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px){
+    nav{
+        height: 100%;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    img{
+        width: 500px;
+    }
+
+    .homepage{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homeupper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .homeupper button{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 200px;
+        height: 70px;
+    }
+
+    .line{
+        width: 100%;
+        height: 1px;
+        margin: 20px;
+    }
+
+    .homeupper h1{
+        font-size: 70px;
+    }
+
+    .homeupper button a{
+        font-size: 15px;
+    }
+
+    .homelower h1{
+        font-size: 50px;
+    }
+
+    .lowertitleline{
+        width: 300px;
+    }
+
+    .topitem img{
+        width: 125px;
+        height: 125px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+    img{
+        width: 500px;
+    }
+
+    .homepage{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homeupper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .homeupper button{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 200px;
+        height: 70px;
+    }
+
+    .line{
+        width: 100%;
+        height: 1px;
+        margin: 20px;
+    }
+
+    .homeupper h1{
+        font-size: 70px;
+    }
+
+    .homeupper button a{
+        font-size: 15px;
+    }
+
+    .homelower h1{
+        font-size: 50px;
+    }
+
+    .lowertitleline{
+        width: 300px;
+    }
+
+    .topitem img{
+        width: 125px;
+        height: 125px;
+    }
+}
